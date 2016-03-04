@@ -1,3 +1,11 @@
-h1 {
-  color: green;
+.footer {
+  background-color: #068D9D;
+  height: 40px;
+}
+
+#pFooter {
+  color: white;
+}
+
+#button {
 }
