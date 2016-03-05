@@ -1,3 +1,16 @@
-h1 {
-  color: green;
+#subTotalBox {
+  border: 1px solid black;
+}
+
+.footer {
+  background-color: #068D9D;
+  height: 40px;
+}
+
+#pFooter {
+  color: white;
+}
+
+.menuItems {
+  font-size: 30px;
 }

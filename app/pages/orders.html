@@ -5,6 +5,8 @@
 
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/simplex/bootstrap.min.css" rel="stylesheet" integrity="sha256-rgHoMgF45/9e2kvxfvR0KarwQNw5CRqgxbrthGpeUuc= sha512-CGGV53FSdrXrjyGCNk04p+xuna3CbE33n773A0EEmqtcN8W3NaFsR0vSQcbll5dpSS90d3i2Zh3jFX/j46hzJA==" crossorigin="anonymous">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
   <head>
@@ -17,43 +19,52 @@
   <body>
     <nav class="navbar navbar-default">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Galvanize Eats</a>
+          <a class="navbar-brand" href="../../app/index.html">Galvanize Eats</a>
         </div>
     </nav>
     <div class='container'>
-      <form>
-        <select multiple>
-          <option>Cheeseburger</option>
-          <option>Hamburger</option>
-          <option>Cheese Pizza</option>
-          <option>Pepperoni Pizza</option>
-        </select>
+      <div class='col-md-5 col-md-offset-2'>
+        <label>Menu Items
+          <br>
+          <select multiple>
+            <option id='firstItem' class='menuItems'></option>
+            <option id='secondItem' class='menuItems'></option>
+            <option id='thirdItem' class='menuItems'></option>
+            <option id='fourthItem' class='menuItems'></option>
+          </select>
+        </label>
         <br>
         <label>Quanity
           <br>
-          <input type='number'></input>
+          <input id='quanity' type='number' name='quanity'></input>
         </label>
-        <button type='submit'>Add Item</button>
+        <button id='quanityButton'>Add Item</button>
         <br>
         <label>Name
           <br>
-          <input type='text' placeholder='Full Name'></input>
+          <input type='text' name='customerName' placeholder='Full Name' class='menuItems'></input>
         </label>
         <br>
         <label>Phone Number
           <br>
-          <input type='number' placeholder='Ex: (555) 555-555'></input>
+          <input type='number' name='customerPhone' placeholder='Ex: (555) 555-555' class='menuItems'></input>
         </label>
         <br>
         <label>Address
           <br>
-          <input type='text' placeholder='Address'></input>
+          <input type='text' name='customerAddress' placeholder='Address' class='menuItems'></input>
         </label>
-      </form>
+        <br>
+        <button type='submit'>Deliver It!</button>
+      </div>
+      <div id='subTotalBox' class='col-md-5'>
+        <h1>Subtotal Box</h1>
+        <p id='subTotal'></p>
+      </div>
     </div>
 
     <footer class='footer'>
-      <p id='pFooter' class='text-center'>Galvanize 2016 | Seattle Washington</p>
+      <p id='pFooter' class='text-center'>&copy;Galvanize 2016 | Seattle Washington</p>
     </footer>
   </body>
 </html>
