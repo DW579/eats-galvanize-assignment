@@ -24,15 +24,28 @@
     </nav>
     <div class='container'>
       <div class='col-md-5 col-md-offset-2'>
-        <label>Menu Items
-          <br>
-          <select multiple>
-            <option id='firstItem' class='menuItems'></option>
-            <option id='secondItem' class='menuItems'></option>
-            <option id='thirdItem' class='menuItems'></option>
-            <option id='fourthItem' class='menuItems'></option>
-          </select>
-        </label>
+        <table>
+          <tr>
+            <td id='firstItem'></td>
+            <td id='firstPrice'></td>
+          </tr>
+          <tr>
+            <td id='secondItem'></td>
+            <td id='secondPrice'></td>
+          </tr>
+          <tr>
+            <td id='thirdItem'></td>
+            <td id='thirdPrice'></td>
+          </tr>
+          <tr>
+            <td id='fourthItem'></td>
+            <td id='fourthPrice'></td>
+          </tr>
+          <tr>
+            <td id = 'fifthItem'></td>
+            <td id = 'fifthPrice'></td>
+          </tr>
+        </table>
         <br>
         <label>Quanity
           <br>
@@ -55,11 +68,12 @@
           <input type='text' name='customerAddress' placeholder='Address' class='menuItems'></input>
         </label>
         <br>
-        <button type='submit'>Deliver It!</button>
+        <button id='deliverButton'>Deliver It!</button>
       </div>
       <div id='subTotalBox' class='col-md-5'>
         <h1>Subtotal Box</h1>
-        <p id='subTotal'></p>
+        <table id='subTotalTable'>
+        </table>
       </div>
     </div>
 
